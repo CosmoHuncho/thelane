@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+picture {
+    display: block;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    border-radius: 15px;
+    display: inline-block;
+    background: #3882F6;
+    color: white;
+    font-size: 1.2em;
+    padding: .6em 1em;
+}
+
+inner-column about {
+    border: none;
+    display: block;
+}
+
+about h1 {
+    display: inline-block; 
+    border: 2px solid ghostwhite;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 30%
+}
+
+about p {
+    display: inline-block;
+    border: 2px solid ghostwhite;
+    border-radius: 5px;
+    margin-left: 18.5%;
+    margin-right: 23%;
+    align-self: center;
+    padding: 10px 20px;
+}
+
+inner-column sign {
+    border: none;
+    display: block;
+}
+
+sign h1 {
+    display: inline-block; 
+    border: 2px solid ghostwhite;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 20%
+}
+
+welcomediv {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+welcomediv text-content{
+    display: block;
+}
+
+welcomediv text-content p{
+    margin-top: 10px;
+    margin-left: 28%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+welcomediv text-content h1{
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 28%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+welcomediv text-content .button{
+    margin-top: 10px;
+    font-style: sans-serif;
+    font-size: 20px;
+    margin-left: 28%;
+}
+
+welcomediv picture{
+    margin-right: 15%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: none;
+}
+
+@media (min-width: 700px){
+    welcomediv{
+        flex: 1;
+        flex-direction: row-reverse;
+    }
+    welcomediv :is(text-content, picture) {
+        flex-basis: 50%;
+    }
+}
+
+body {
+    background: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    /*border: 10px solid black;*/
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    /*border: 4px solid orange;*/
+}
+
+main sections {
+    /*border: 4px solid orange;*/
+}
+
+sections {
+    display: block;
+    /*border: 4px solid black;*/
+}
+
+inner-column {
+    display: block;
+    border: 0px solid black;
+    width: 98%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+inner-column header {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+inner-column header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-basis: 75%;
+    margin-top: 22.5px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+@media (min-width: 700px){
+    header{
+        flex: 1;
+        flex-direction: row;
+    }
+    header :is(inner-column, .links) {
+        flex-basis: 33%;
+    }
+}
+
+header {
+    display: flex;
+    color: whitesmoke;
+    border: none;
+    background: cadetblue;
+    min-height: 65px;
+    max-height: 65px;
+    border-radius: 2px;
+}
+
+footer p {
+    border: 0px solid ghostwhite;
+    display: inline-block;
+    margin-left: 37%
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.headcontainer {
+    background: cadetblue;
+}
+
+.bodycontainer {
+    background: slategrey;
+}
+
+p {
+    color: whitesmoke;
+    font-weight:light;
+    font-family:'Courier New', Courier, monospace;
+}
