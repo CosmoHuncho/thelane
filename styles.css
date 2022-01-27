@@ -7,7 +7,7 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: start;
-    border: 2px solid black;
+    border: 0px solid black;
     border-radius: 5px;
     padding: 10px 20px;
 }
@@ -58,7 +58,7 @@ about p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    border: 0px solid black;
     border-radius: 5px;
     padding: 10px 20px;
     flex: 1;
@@ -242,6 +242,10 @@ h1 {
 
 .bodycontainer {
     background: ghostwhite;
+}
+
+.footcontainer {
+    background: cadetblue;
 }
 
 p {
