@@ -75,11 +75,12 @@ sign h1 {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px 20px;
+    text-align: center;
 }
 
 welcomediv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     padding: 10px 20px;
     flex: 1;
@@ -93,8 +94,8 @@ welcomediv text-content{
 
 welcomediv text-content p{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     margin-top: 10px;
     border: 2px solid black;
@@ -105,8 +106,8 @@ welcomediv text-content p{
 
 welcomediv text-content h1{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     font-size: 42px;
     font-weight: bold;
@@ -125,8 +126,8 @@ welcomediv text-content .button{
 
 welcomediv picture{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
@@ -195,7 +196,6 @@ inner-column header h1 {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex-basis: 75%;
     margin-top: 22.5px;
     font-family:'Courier New', Courier, monospace;
 }
