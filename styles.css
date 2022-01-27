@@ -2,15 +2,28 @@
     box-sizing: border-box;
 }
 
+ul {
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 25%;
+    margin-right: 27%;
+}
+
 picture {
     display: block;
     border-radius: 5px;
+    height: 200px;
+    margin-top: 45px;
+    flex: 1;
 }
 
-img {
+picture img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: flex;
 }
 
 .button {
@@ -29,22 +42,24 @@ inner-column about {
 
 about h1 {
     display: inline-block; 
-    border: 2px solid ghostwhite;
+    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-left: 30%
+    margin-left: 30%;
+    flex: 1;
 }
 
 about p {
     display: inline-block;
-    border: 2px solid ghostwhite;
+    border: 2px solid black;
     border-radius: 5px;
     margin-left: 18.5%;
     margin-right: 23%;
     align-self: center;
     padding: 10px 20px;
+    flex: 1;
 }
 
 inner-column sign {
@@ -54,7 +69,7 @@ inner-column sign {
 
 sign h1 {
     display: inline-block; 
-    border: 2px solid ghostwhite;
+    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
@@ -68,6 +83,7 @@ welcomediv {
     flex-direction: column;
     gap: 20px;
     padding: 10px 20px;
+    flex: 1;
 }
 
 welcomediv text-content{
@@ -80,6 +96,7 @@ welcomediv text-content p{
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
+    flex: 1;
 }
 
 welcomediv text-content h1{
@@ -89,6 +106,7 @@ welcomediv text-content h1{
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
+    flex: 1;
 }
 
 welcomediv text-content .button{
@@ -103,6 +121,7 @@ welcomediv picture{
     border: 2px solid black;
     border-radius: 5px;
     padding: none;
+    flex: 1;
 }
 
 @media (min-width: 700px){
@@ -134,6 +153,7 @@ main sections {
 
 sections {
     display: block;
+    flex: 1;
     /*border: 4px solid black;*/
 }
 
@@ -144,6 +164,7 @@ inner-column {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    flex: 1;
 }
 
 inner-column header {
@@ -151,6 +172,7 @@ inner-column header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex: 1;
 }
 
 inner-column header h1 {
@@ -158,6 +180,7 @@ inner-column header h1 {
     font-weight: bold;
     margin-left: 115px;
     margin-top: 20px;
+    flex: 1;
 }
 
 .links {
@@ -187,6 +210,7 @@ header {
     min-height: 65px;
     max-height: 65px;
     border-radius: 2px;
+    flex: 1;
 }
 
 footer p {
@@ -205,7 +229,7 @@ h1 {
 }
 
 .bodycontainer {
-    background: slategrey;
+    background: ghostwhite;
 }
 
 p {
